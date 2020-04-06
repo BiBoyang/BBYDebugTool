@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16EF122243B6C33006B0A8F /* GetCPU.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EF121243B6C33006B0A8F /* GetCPU.m */; };
 		F1A31FDF21A1711000B16E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A31FDE21A1711000B16E30 /* AppDelegate.m */; };
 		F1A31FE221A1711000B16E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A31FE121A1711000B16E30 /* ViewController.m */; };
 		F1A31FE521A1711000B16E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A31FE321A1711000B16E30 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F16EF120243B6C33006B0A8F /* GetCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCPU.h; sourceTree = "<group>"; };
+		F16EF121243B6C33006B0A8F /* GetCPU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetCPU.m; sourceTree = "<group>"; };
 		F1A31FDA21A1711000B16E30 /* BBYDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBYDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A31FDD21A1711000B16E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1A31FDE21A1711000B16E30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				F1A31FDE21A1711000B16E30 /* AppDelegate.m */,
 				F1A31FE021A1711000B16E30 /* ViewController.h */,
 				F1A31FE121A1711000B16E30 /* ViewController.m */,
+				F16EF120243B6C33006B0A8F /* GetCPU.h */,
+				F16EF121243B6C33006B0A8F /* GetCPU.m */,
 				F1A31FE321A1711000B16E30 /* Main.storyboard */,
 				F1A31FE621A1711100B16E30 /* Assets.xcassets */,
 				F1A31FE821A1711100B16E30 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A31FE221A1711000B16E30 /* ViewController.m in Sources */,
+				F16EF122243B6C33006B0A8F /* GetCPU.m in Sources */,
 				F1A31FED21A1711100B16E30 /* main.m in Sources */,
 				F1A31FDF21A1711000B16E30 /* AppDelegate.m in Sources */,
 				F1A3201221A1713600B16E30 /* NSObject+BBYDebugTool.m in Sources */,
@@ -450,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAY7K7N8E4;
 				INFOPLIST_FILE = BBYDebugTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAY7K7N8E4;
 				INFOPLIST_FILE = BBYDebugTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

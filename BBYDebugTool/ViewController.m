@@ -8,11 +8,17 @@
 
 #import "ViewController.h"
 #import "NSObject+BBYDebugTool/NSObject+BBYDebugTool.h"
+
+#import "GetCPU.h"
+
 @interface ViewController ()
 
 @property (nonatomic, copy) void (^play)(void);
 @property (nonatomic, copy) NSString *string;
 @property (nonatomic, strong) UIButton *button;
+
+@property (nonatomic , strong) NSTimer *CPUTimer;
+
 
 @end
 
@@ -24,6 +30,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self getCPU];
+    
+    
+    NSInteger cpuCoreNum = [GetCPU cpuNumber];
+    
+    NSLog(@"%ld",(long)cpuCoreNum);
     
     
     NSString *strA = [NSString stringWithFormat:@"abc"];
@@ -43,6 +56,24 @@
     
     
 }
+
+#pragma mark-----App的CPU占用率
+
+-(void) getCPU {
+    self.CPUTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(CPUTimerAction:) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop]addTimer:self.CPUTimer forMode:NSRunLoopCommonModes];
+    [self.CPUTimer fire];
+}
+
+- (void)CPUTimerAction:(NSTimer *)timer {
+    CGFloat cpu = [GetCPU appCpuUsage];
+    NSLog(@"%.2f",cpu);
+}
+
+// CPU核数
+
+
+
 
 
 
